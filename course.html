@@ -10,67 +10,25 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/my_stylesheet.css" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/search.js"></script>
+    <script src="js/course.js"></script>
   </head>
   <body>
     <section class="page-header">
       <h1 class="project-name">Technion histograms search</h1>
       <h2 class="project-tagline"></h2>
       <a href="https://github.com/DaAnIV/technion-histograms-search" class="btn">View on GitHub</a>
-    </section>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-    <section class="main-content">
-      <div>
-        <p>
-          <select id="faculty-select">
-            <option value="00">כל הפקולטות</option>
-            <option value="01">הנדסה אזרחית וסביבתית</option>
-            <option value="03">הנדסת מכונות</option>
-            <option value="04">הנדסת חשמל</option>
-            <option value="05">הנדסה כימית</option>
-            <option value="06">הנדסת ביוטכנולוגיה ומזון</option>
-            <option value="08">הנדסת אוירונוטיקה וחלל</option>
-            <option value="09">הנדסת תעשייה וניהול</option>
-            <option value="10">מתמטיקה</option>
-            <option value="11">פיזיקה</option>
-            <option value="12">כימיה</option>
-            <option value="13">ביולוגיה</option>
-            <option value="19">מתמטיקה שימושית</option>
-            <option value="20">ארכיטקטורה ובינוי ערים</option>
-            <option value="21">חינוך למדע וטכנולוגיה</option>
-            <option value="23">מדעי המחשב</option>
-            <option value="27">רפואה</option>
-            <option value="31">מדע והנדסה של חומרים</option>
-            <option value="32">לימודים הומניסטיים ואמנויות</option>
-            <option value="33">הנדסה ביו-רפואית</option>
-            <option value="39">ספורט</option>
-          </select>
-        </p>
-        <input type="text" id="course-search" class="search-box" onkeyup="myFunction()" placeholder="חפש קורסים...">
-      </div>
-      <ul id="courses-list" class="my-list">
-      </ul>
+      <a href=".." class="btn">All courses</a>
     </section>
 
+    <section class="main-content">
+    <h3 id="course-title"></h3>
+    <p>
+      <label>ממוצע קורס:</label>
+      <label id="course-average"></label>  
+    </p>
+    <ul id="semesters-list" class="my-list">
+    </ul>
+    </section>
 
     <footer class="site-footer" dir="ltr">
       <span class="site-footer-owner"><a href="https://github.com/DaAnIV/technion-histograms-search">Technion-histograms-search</a> is maintained by <a href="https://github.com/DaAnIV">DaAnIV</a>.</span>
